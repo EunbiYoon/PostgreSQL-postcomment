@@ -9,10 +9,6 @@
   </head>
   <body>
     <div class="container">
-      <!--message popup-->
-      {% if message %}
-      <p class="message">{{ message | safe }}</p>
-      {% endif %}
 
       <!--submit button information-->
       <form action="/submit" method="POST">
@@ -27,7 +23,7 @@
         <div class="form-group">
           <h3>Who installed your product?</h3>
           <select name="dealer">
-            <option value="">Home Depot</option>
+            <option value="homedepot">Home Depot</option>
             <option value="Tom Smith">Best Buy</option>
             <option value="Karen Swanson">Karen Swanson</option>
             <option value="Jim Johnson">Jim Johnson</option>
